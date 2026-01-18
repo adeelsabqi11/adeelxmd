@@ -176,7 +176,7 @@
       obj.size = "5";
       setTimeout(() => {
         obj.innerText = text;
-        obj.style = "color:white;font-weight-bold";
+        obj.style = "color:green;font-weight-bold";
         obj.size = "5";
       }, 500);
     }
@@ -184,7 +184,7 @@
     b.addEventListener("click", async (e) => {
       e.preventDefault();
       if (!c.value) {
-        a.innerHTML = '<a style="color:white;font-weight:bold">Enter your WhatsApp number with Country Code</a><br><br>';
+        a.innerHTML = '<a style="color:green;font-weight:bold">Enter your WhatsApp number with Country Code</a><br><br>';
       } else if (c.value.replace(/[^0-9]/g, "").length < 11) {
         a.innerHTML = '<a style="color:red;font-weight:bold">Invalid Phone Number</a><br><br>';
       } else {
